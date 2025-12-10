@@ -181,6 +181,11 @@
             color: #999;
         }
 
+        button{
+            background-color: white;
+            font-size: 20px;
+        }
+
 
 
         @media screen and (max-width:950px) {
