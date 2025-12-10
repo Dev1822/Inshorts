@@ -171,13 +171,16 @@
             text-decoration: underline;
         }
 
-        .footer-social i {
-            font-size: 22px;
+        .footer-social{
+            display: flex;
+        }
+
+        .footer-social div {
             margin-left: 20px;
             cursor: pointer;
         }
 
-        .footer-social i:hover {
+        .footer-social div:hover {
             color: #999;
         }
 
