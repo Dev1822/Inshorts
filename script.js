@@ -5,15 +5,20 @@ const hamburger=document.querySelector(".hamburger");
 const menu=document.querySelector(".menu");
 const categories=document.querySelectorAll(".category");
 const loading=document.querySelector(".loading");
-console.log(categories[0].textContent);
+
+var button=document.createElement("button");
+button.textContent="Load More";
+const footer=document.querySelector(".footer");
 
 let topic="everything";
 let sidebarStatus="closed";
 
+let n=10;
+
 function loadNews(data){
     let articles=data.articles;
     let contents="";
-    for(let i=0;i<10;i++){
+    for(let i=0;i<n;i++){
         let img=articles[i].urlToImage;
         let title=articles[i].title;
         let author=articles[i].author;
@@ -38,6 +43,7 @@ function loadNews(data){
         contents+=content;
     }
     news.innerHTML=contents;
+    news.appendChild(button);
 }
 
 function loadAPI(topic){
@@ -74,3 +80,8 @@ categories.forEach(category => {
         loadAPI(topic);
     })
 });
+
+button.addEventListener("click",()=>{
+    n+=5;
+    loadAPI(topic);
+})
