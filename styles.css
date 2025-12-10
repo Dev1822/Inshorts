@@ -1,0 +1,203 @@
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            padding: 3vh;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 #0000001f;
+            position: sticky;
+            top: 0;
+            background-color: white;
+            z-index: 100;
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+        }
+
+        .hamburger {
+            height: 40px;
+        }
+
+        .menu {
+            font-size: 25px;
+        }
+
+        .news {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            z-index: 1;
+        }
+
+        .card {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1000px;
+            border: 1px black solid;
+            gap: 10px;
+            padding: 10px;
+            z-index: 1;
+        }
+
+        .img {
+            height: 320px;
+            width: 40%;
+            border-radius: 10px;
+        }
+
+        .content {
+            width: 60%;
+        }
+
+        .title {
+            color: #44444d;
+            cursor: pointer;
+            font-size: 22px;
+            line-height: 27px;
+        }
+
+        .author {
+            color: #808290;
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 22px;
+        }
+
+        .description {
+            color: #44444d;
+            font-size: 16px;
+            line-height: 22px;
+            margin-top: 8px;
+        }
+
+        .link {
+            font-size: 12px;
+            font-weight: 400;
+            margin-bottom: 12px;
+            text-decoration: none;
+            color: #44444d;
+        }
+
+        .headercontent {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .center {
+            margin: auto;
+        }
+
+        .sidebar {
+            display: none;
+            position: fixed;
+            border: 1px black solid;
+            top: 5px;
+            left: 132px;
+            width: 220px;
+            background-color: #2b2d32;
+            padding: 20px;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar h3 {
+            color: #aaa;
+            font-size: 14px;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 12px;
+        }
+
+        .category {
+            color: #d6dfeb;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .category:hover {
+            color: white;
+            margin-left: 4px;
+            cursor: pointer;
+        }
+
+        .loading {
+            text-align: center;
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer-left {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .flogo img {
+            width: 200px;
+        }
+
+        .footer-links a {
+            color: #dcdcdc;
+            display: block;
+            margin-bottom: 5px;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-social i {
+            font-size: 22px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        .footer-social i:hover {
+            color: #999;
+        }
+
+
+
+        @media screen and (max-width:950px) {
+            .card {
+                flex-direction: column;
+            }
+
+            .img {
+                width: 100%;
+            }
+
+            .content {
+                width: 100%;
+            }
+
+            .footer{
+                flex-direction: column;
+            }
+
+        }
